@@ -34,7 +34,6 @@ export const navLinks = [
       { name: 'Why Visit', href: '/for-visitors/why-visit' },
       { name: 'Expo Flyer', href: '/for-visitors/expo-flyer' },
       { name: 'Floor Plan', href: '/for-visitors/floor-plan' },
-      { name: 'Staying In Dhaka', href: '/for-visitors/staying-in-dhaka' },
       { name: 'Venue Location', href: '/for-visitors/venue-location' },
     ],
   },

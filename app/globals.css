@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: #ACDBDF; */
+  background-color: #cecee7;
+  font-family: "Archivo", sans-serif;
+  color: #343131;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-33.33%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 30s linear infinite;
+  width: 300%;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 30s linear infinite;
+  width: 300%;
+}

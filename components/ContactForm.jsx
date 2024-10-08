@@ -4,11 +4,14 @@ import { useState } from 'react';
 
 const ContactForm = () => {
     const [loading, setLoading] = useState(false);
+    const [message, setMessage] = useState('');
 
     async function handleSubmit(event) {
         event.preventDefault();
         setLoading(true);  // Set loading state to true
-        const formData = new FormData(event.target);
+        setMessage('');  // Clear any previous messages
+        const form = event.target;
+        const formData = new FormData(form);
 
         formData.append('access_key', 'e08c8aeb-ee56-4506-93d3-ac3209c0b7a7');
 
@@ -26,10 +29,14 @@ const ContactForm = () => {
             });
             const result = await response.json();
             if (result.success) {
-                console.log(result);
+                setMessage('Your message has been sent successfully!');
+                form.reset();  // Reset form fields
+            } else {
+                setMessage('Failed to send your message. Please try again.');
             }
         } catch (error) {
             console.error('Error:', error);
+            setMessage('An error occurred. Please try again.');
         } finally {
             setLoading(false);  // Reset loading state
         }
@@ -81,11 +88,16 @@ const ContactForm = () => {
                     </div>
                     <button
                         type="submit"
-                        className={`bg-accent hover:bg-accent/80 transition-colors text-white px-4 py-2 rounded-lg ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        className={`bg-accent text-white px-4 py-2 rounded-lg ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                         disabled={loading}
                     >
                         {loading ? 'Sending...' : 'Send Message'}
                     </button>
+                    {message && (
+                        <div className={`mt-4 ${message.includes('successfully') ? 'text-green-500' : 'text-red-500'}`}>
+                            {message}
+                        </div>
+                    )}
                 </form>
             </div>
         </div>

@@ -8,21 +8,20 @@ const Footer = () => {
   return (
     <div className="bg-primary ">
       {/* upper footer */}
-      <div className="flex flex-col md:flex-row text-white container mx-auto py-6 justify-between px-4 space-y-10">
+      <div className="flex flex-col md:flex-row text-white container mx-auto py-6 justify-between px-4 space-y-10 items-center">
         <div className="flex-col space-y-4">
           <div className="text-2xl font-semibold ">
             Contact Us
             <div className="h-2 w-20 border-b-2 border-accent"></div>
           </div>
           <p>
-            <span></span> +88 02 222226710
+            <span></span> +8801727343953
           </p>
           <p>
-            <span></span>Email: info@essab.org.bd, expo@essab.org.bd
+            <span></span>Email: amamunds@gmail.com
           </p>
           <p>
-            <span></span>224/1, Tropical NMG Tower (14th floor), Eskaton Road,
-            Dhaka-1000
+            <span></span>House # 45, Road # 11, Niketan, Gulshan
           </p>
         </div>
 
@@ -42,8 +41,12 @@ const Footer = () => {
             <Link href="/privacy-policy">Privacy Policy</Link>
           </p>
           <p>
-            Developed By {" "}
-            <Link href="http://www.rrad.ltd" pasHref={true} className="text-red-500 font-semibold hover:underline">
+            Developed By{" "}
+            <Link
+              href="http://www.rrad.ltd"
+              pasHref={true}
+              className="text-red-500 font-semibold hover:underline"
+            >
               RRAD
             </Link>
           </p>

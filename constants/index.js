@@ -61,12 +61,12 @@ export const navLinks = [
 ];
 
 export const sponsors = [
-  { name: 'Sponsor 1', imageUrl: '/SponsorBrands/pepsi.png' },
+  { name: 'Sponsor 1', imageUrl: '/SponsorBrands/rrad.svg' },
   { name: 'Sponsor 2', imageUrl: '/SponsorBrands/basis.svg' },
-  { name: 'Sponsor 3', imageUrl: '/SponsorBrands/nasa.png' },
-  { name: 'Sponsor 4', imageUrl: '/SponsorBrands/mercedes.png' },
-  { name: 'Sponsor 5', imageUrl: '/SponsorBrands/pepsi.png' },
-  { name: 'Sponsor 6', imageUrl: '/SponsorBrands/nasa.png' },
+  { name: 'Sponsor 3', imageUrl: '/SponsorBrands/walton.png' },
+  { name: 'Sponsor 4', imageUrl: '/SponsorBrands/bkash.webp' },
+  { name: 'Sponsor 5', imageUrl: '/SponsorBrands/gp.svg' },
+  { name: 'Sponsor 6', imageUrl: '/SponsorBrands/walton.png' },
 ];
 
 

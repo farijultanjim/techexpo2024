@@ -12,14 +12,15 @@ const displayProfilePage = () => {
         title="Exhibitor Profile"
         subtitle="Home | Exhibitor Profile"
       />
-      <div className="container mx-auto py-14 px-4 ">
+      <div className="container mx-auto py-14 px-4 text-xl">
         <div className="grid place-items-center">
-        <Image
+        {/* <Image
           src="/Exhibitor-Profile.png"
           width={700}
           height={900}
           alt="exhibitor profile"
-        />
+        /> */}
+        <p>The exhibitor lineup at BITE 2024 represents a different range of tech  diligence. From  introducing startups to established tech  titans,  fair will showcase groundbreaking products and services in fields like smart technology, artificial intelligence, robotics, fintech, cybersecurity, digital  metamorphosis, and much  further. Each  expo has a unique story to tell, bringing innovative  results that shape the future of our everyday lives.</p>
         </div>
       </div>
     </div>

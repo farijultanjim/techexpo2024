@@ -40,21 +40,21 @@ const PhotoGallery = () => {
 
   const cardData = [
     {
-      image: "/slider2.jpg",
-      title: "Exhibit",
+      image: "/featuredImages/launching.jpg",
+      title: "Launching Program",
       description:
-        "A golden platform for manufacturers and end users. Perfect place to showcase your products & latest technologies and interact with clients from Government, Trade, Industry and Service Sectors.",
+        "The delay is over! Join us on December 9, 2024, at BICC's Hall of Fame for the Bangladesh International Tech Expo 2024 grand launch.  The most awaited event of the time is then!  It’s time to step into a world of  measureless  invention, where the future of tech begins!  Let’s celebrate the  launch of  commodity extraordinary!",
       buttons: [
         {
           label: "Learn More",
-          onClick: () => router.push("/page1"), // Redirect to details page
+          onClick: () => router.push("/page1"),
           primary: true,
         },
         {
           label: "Download PDF",
           onClick: () => {
             const link = document.createElement("a");
-            link.href = "/file1.pdf"; // Path to your PDF
+            link.href = "/file1.pdf";
             link.download = "file1.pdf";
             document.body.appendChild(link);
             link.click();
@@ -64,32 +64,111 @@ const PhotoGallery = () => {
       ],
     },
     {
-      image: "/slider3.jpg",
-      title: "Visitor",
+      image: "/featuredImages/brand.jpg",
+      title: "BRAND Exertion Platform",
       description:
-        "Come and meet more than 100 brands & exhibitors from all around the world. Explore latest products, technologies and most suitable life safety solution for your building and industries.",
+        "Meet the Stars Behind the Tech! Join us for exclusive brand  ministers, celebrity engagements, and top media content only at the Bangladesh International Tech Expo 2024. Do n’t miss the future of tech, right then!",
+      buttons: [
+        {
+          label: "Learn More",
+          onClick: () => router.push("/page1"),
+          primary: true,
+        },
+        {
+          label: "Download PDF",
+          onClick: () => {
+            const link = document.createElement("a");
+            link.href = "/file1.pdf";
+            link.download = "file1.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          },
+        },
+      ],
+    },
+    {
+      image: "/featuredImages/entertainment.jpg",
+      title: "Entertainment",
+      description:
+        "Along with groundbreaking  inventions, enjoy 6 days of musical musicales featuring top bands and solo artists every day. Let’s move' Towards the Vision of Tech Bangladesh' together!",
       buttons: [
         {
           label: "Register Now",
-          onClick: () => router.push("/register"), // Redirect to registration page
+          onClick: () => router.push("/register"),
           primary: true,
         },
       ],
     },
     {
-      image: "/slider2.jpg",
-      title: "Seminar",
+      image: "/featuredImages/raffle.jpg",
+      title: "Raffle Draw",
       description:
-        "Country's biggest showcase for fire, safety and security sector, organized by Electronic Safety and Security Association of Bangladesh (ESSAB), in association with Bangladesh Fire Service & Civil Defense and National Fire Protection.",
+        "Your ticket is  further than just entry it’s your chance to win amazing prizes every single day!  Not just for tech  suckers! snare your fair ticket and join the  diurnal  truck draw for a chance to win fantastic prizes!",
       buttons: [
         {
           label: "Learn More",
-          onClick: () => router.push("/page1"), // Redirect to RSVP page
+          onClick: () => router.push("/page1"),
           primary: true,
         },
         {
-          label: "View Attendees",
-          onClick: () => router.push("/attendees"), // Redirect to attendees list
+          label: "Download PDF",
+          onClick: () => {
+            const link = document.createElement("a");
+            link.href = "/file1.pdf";
+            link.download = "file1.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          },
+        },
+      ],
+    },
+    {
+      image: "/featuredImages/5gzone.jpg",
+      title: "Future Experience Zone",
+      description:
+        "Ready to  witness the future of Smart Bangladesh? Enter the 5G unborn Experience Zone at the Bangladesh International Tech Expo 2024 and discover how technology is casting our future!",
+      buttons: [
+        {
+          label: "Learn More",
+          onClick: () => router.push("/page1"),
+          primary: true,
+        },
+        {
+          label: "Download PDF",
+          onClick: () => {
+            const link = document.createElement("a");
+            link.href = "/file1.pdf";
+            link.download = "file1.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          },
+        },
+      ],
+    },
+    {
+      image: "/featuredImages/seminar.jpg",
+      title: "Seminars",
+      description:
+        "Whether you’re fascinated by AI or curious about the impact of Blockchain, the Bangladesh International Tech Expo 2024 has  commodity just for you! Join 10 specialized  forums  led by assiduity experts and take a deep dive into the future of tech.",
+      buttons: [
+        {
+          label: "Learn More",
+          onClick: () => router.push("/page1"),
+          primary: true,
+        },
+        {
+          label: "Download PDF",
+          onClick: () => {
+            const link = document.createElement("a");
+            link.href = "/file1.pdf";
+            link.download = "file1.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          },
         },
       ],
     },

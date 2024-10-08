@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-const images = ["/slider1.jpg", "/slider2.jpg", "/slider3.jpg"];
+const images = ["/slider1.webp", "/slider2.jpg", "/slider4.jpg", "/slider3.jpg"];
 
 const Hero = () => {
   const [domLoaded, setDomLoaded] = useState(false);

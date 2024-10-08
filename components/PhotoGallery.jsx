@@ -17,7 +17,7 @@ const Card = ({ image, title, description, buttons }) => (
       <h3 className="text-xl text-white font-semibold mb-2">{title}</h3>
       <p className="text-gray-300 mb-4 flex-grow">{description}</p>
       <div className="mt-auto flex space-x-2">
-        {buttons.map((button, index) => (
+        {/* {buttons.map((button, index) => (
           <button
             key={index}
             onClick={button.onClick}
@@ -29,7 +29,7 @@ const Card = ({ image, title, description, buttons }) => (
           >
             {button.label}
           </button>
-        ))}
+        ))} */}
       </div>
     </div>
   </div>

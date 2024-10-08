@@ -38,7 +38,8 @@ const Footer = () => {
         <div className=" container mx-auto flex justify-between items-center py-2 px-4">
           <p>Copyright BITE 2024 All Rights Researved by</p>
           <p>
-            <Link href="/privacy-policy">Privacy Policy</Link>
+            {/* <Link href="/privacy-policy">Privacy Policy</Link> */}
+            This website is under development
           </p>
           <p>
             Developed By{" "}

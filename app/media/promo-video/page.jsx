@@ -13,7 +13,7 @@ const PromoVideoPage = () => {
         <div className=" overflow-hidden grid place-items-center">
           <iframe
             className="aspect-video w-1/2"
-            src={"https://www.youtube.com/embed/88do9dTM5Ac"}
+            src={"https://www.youtube.com/embed/6rjTMdi37Kc"}
             title={
               "Message from Niaz Ali Chisty, The Honorable President of ESSAB"
             }

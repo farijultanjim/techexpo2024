@@ -9,7 +9,7 @@ const HomeBanner = () => {
           <div className="w-full md:w-1/2">
             <div className="aspect-video">
               <iframe
-                src="https://www.youtube.com/embed/88do9dTM5Ac"
+                src="https://www.youtube.com/embed/6rjTMdi37Kc"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

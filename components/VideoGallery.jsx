@@ -24,15 +24,15 @@ const VideoCard = ({ videoUrl, title }) => (
   const VideoGallery = () => {
     const videoData = [
       {
-        videoUrl: "https://www.youtube.com/embed/88do9dTM5Ac", 
+        videoUrl: "https://www.youtube.com/embed/6rjTMdi37Kc", 
         title: "Message from Niaz Ali Chisty, The Honorable President of ESSAB",
       },
       {
-        videoUrl: "https://www.youtube.com/embed/88do9dTM5Ac", 
+        videoUrl: "https://www.youtube.com/embed/6rjTMdi37Kc", 
         title: "Message from Brigadier General Md Main Uddin, Director General - Bangladesh Fire Service and Civil Defense",
       },
       {
-        videoUrl: "https://www.youtube.com/embed/88do9dTM5Ac", 
+        videoUrl: "https://www.youtube.com/embed/6rjTMdi37Kc", 
         title: "Message from Jim Pauley - The Honorable President of NFPA",
       },
     ];

@@ -15,12 +15,12 @@ const MediaPublicationPage = () => {
           Bangladesh International TechExpo 2024
         </p>
         <p>
-          Country&apos;s Biggest Showcase for Fire Safety and Security Sector.
+          Country&apos;s Biggest Showcase for Tech Sector.
         </p>
 
         <div>
           <p className="text-xl font-bold ">Date</p>
-          <p className="text-xl font-semibold ">9th December, 2024</p>
+          <p className="text-xl font-semibold ">9th December, 2024 to 14th December, 2024</p>
         </div>
 
         <div>
@@ -38,7 +38,7 @@ const MediaPublicationPage = () => {
 
         <div>
           <p className="text-xl font-bold ">Expo Time</p>
-          <p className="text-xl ">10.30 am to 7.30 pm</p>
+          <p className="text-xl ">10.30 am to 8.00 pm</p>
         </div>
 
         <div>
@@ -56,15 +56,14 @@ const MediaPublicationPage = () => {
         <div>
           <p className="text-xl font-bold ">Organizer</p>
           <p className="text-xl ">
-            Electronics Safety and Security Association of Bangladesh (ESSAB)
+            Creative Age
           </p>
         </div>
 
         <div>
           <p className="text-xl font-bold ">In Association With</p>
           <p className="text-xl ">
-            Bangladesh Fire Service & Civil Defense and National Fire Protection
-            Association NFPA, (USA).
+            Bangladesh International Techexpo 2024.
           </p>
         </div>
       </div>

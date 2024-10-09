@@ -6,6 +6,12 @@ import PriceModal from "@/components/PriceModal";
 
 const OnlineStallBooking = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPackageDetails, setSelectedPackageDetails] = useState(null); 
+
+  const handleCallForPrice = (packageDetails) => {
+    setSelectedPackageDetails(packageDetails); 
+    setModalOpen(true); 
+  };
 
   const stallData = [
     {
@@ -44,6 +50,13 @@ const OnlineStallBooking = () => {
       />
 
       <div className="container mx-auto py-14 px-4 flex flex-col gap-4 text-xl">
+
+
+
+        <p>
+          Secure your spot at the most awaited tech event of the time! Our online cube reserving system is fast and simple, allowing you to choose from a variety of spaces that fit your requirements. Don’t miss the chance to showcase your inventions to a massive audience of tech enthusiasts and industry professionals. Book your stall today and make your mark in Bangladesh&apos;s tech journey.
+        </p>
+        
         <table className="min-w-full table-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <thead>
             <tr className="bg-gray-200 text-left">
@@ -67,13 +80,13 @@ const OnlineStallBooking = () => {
                 <td className="py-2 px-4">
                   {stall.tariff === "Available" ? (
                     <button
-                      className="bg-blue-500 text-white px-4 py-2 rounded"
-                      onClick={() => setModalOpen(true)} // Open modal on click
+                      className="bg-primary text-white px-4 py-2 rounded"
+                      onClick={() => handleCallForPrice(stall)} // Pass the current stall data
                     >
                       Call for Price
                     </button>
                   ) : (
-                    "Not Available"
+                    ""
                   )}
                 </td>
                 <td className="py-2 px-4">{stall.tariff}</td>
@@ -84,7 +97,11 @@ const OnlineStallBooking = () => {
       </div>
 
       {/* Modal */}
-      <PriceModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+      <PriceModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        packageDetails={selectedPackageDetails} // Pass selected package details to modal
+      />
     </div>
   );
 };
